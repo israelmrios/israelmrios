@@ -1,13 +1,374 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  margin: 2px;
+/* Used the following properties to enable a red outline around any element to help me identify what changes I'm making */
+  /* outline: 1px dashed red; */
+  /* outline-offset: 2px; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --portfolio-black: #050505;
+  --charcoal-gray: #3b3531;
+  --portfolio-white: #F1F1F1;
+  --portfolio-gray: #A1A1A1;
+}
+
+html {
+  font-size: 1rem;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+max-width: 100%;
+display: block;
+}
+
+/* Make container into a flex */
+.flex {
+  display: flex;
+}
+
+body {
+  font-size: 1rem;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(../public/ep_naturalblack.png);
+  line-height: 1.5;
+}
+
+/* Header and Nav */
+.Header {
+  padding: 20px;
+  font-family: 'Francois One', sans-serif;
+}
+
+.Header-h1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  color: var(--portfolio-white);
+}
+
+.Icon {
+  height: 38px;
+  float: left;
+  margin-right: 10px;
+}
+
+.Header nav {
+  float: right;
+  font-family: 'Francois One', sans-serif;
+  font-variant: small-caps;
+  font-size: 2rem;
+  padding-top: 10px;
+}
+
+.Header nav ul {
+  list-style-type: none;
+}
+
+.Header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: var(--portfolio-gray);
+  text-decoration: none;
+}
+
+.code:hover {
+  text-shadow: 2px 2px 5px var(--portfolio-gray);
+}
+
+main {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 1.75rem;
+}
+
+/* Hero Styles */
+.self-image-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
+  gap: 20px;
+}
+
+.self-image {
+  height: 30rem;
+  width: 30rem;
+  background-image: url(../public/self-image-fed-2.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.title-headers-1 {
+  font-size: 401%;
+  text-align: center;
+  color: var(--portfolio-white);
+  font-family: 'Francois One', sans-serif;
+  font-variant: small-caps;
+}
+
+.title-headers-2 {
+  font-size: 200%;
+  font-weight: 700;
+  text-align: center;
+  color: var(--portfolio-white);
+  font-family: 'Open Sans', sans-serif;
+  font-variant: small-caps;
+  line-height: 0;
+}
+
+/* Currently not using this selector */
+/* .title-headers-3 {
+  font-size: 160%;
+  font-weight: 300;
+  text-align: center;
+  color: var(--portfolio-gray);
+  font-family: 'Open Sans', sans-serif;
+  font-variant: small-caps;
+} */
+
+/* About Styles */
+.main-headers {
+  font-size: 3.75rem;
+  text-align: left;
+  color: var(--portfolio-gray);
+  font-family: 'Francois One', sans-serif;
+  text-decoration: underline;
+  font-variant: small-caps;
+  padding-top: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 20px 0;
+  padding: 5px; 
+}
+
+.main-p {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--portfolio-white);
+  font-weight: normal;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding-block: 5rem;
+  justify-items: center;
+}
+
+.skills {
+  color: var(--portfolio-white);
+}
+
+.custom-icon {
+  height: 1.5rem;
+  color: var(--portfolio-white);
+  padding-right: .5rem;
+}
+
+/* Project Container Styles */
+.items {
+  display: flex;
+  align-content: flex-end;
+  min-height: 120px;
+  min-width: 120px;
+  background-color: var(--portfolio-gray);
+  flex-basis: calc(50% - 1em);
+  border: 3px solid var(--portfolio-white);
+  border-radius: 5px;
+  margin: 14px;
+}
+
+.code-box:hover {
+  box-shadow: 4px 4px 10px var(--portfolio-gray);
+}
+
+.items:first-child {
+  min-height: 450px;
+  flex-basis: 100%;
+}
+
+/* Project Images */
+.large-img {
+  background-image: url(../public/NFT-Generator-App.gif);
+  background-size: cover;
+  background-position: top;
+}
+
+.project-4 {
+  background-image: url(../public/Coding-Tech-Blog-App.png);
+  background-size: cover;
+  background-position: top;
+  width: 50%;
+  height: 350px;  
+}
+
+.project-3 {
+  background-image: url(../public/Movie-Finder-App.png);
+  background-size: cover;
+  background-position: top;
+  width: 50%;
+  height: 350px;    
+}
+
+.project-2 {
+  background-image: url(../public/Weather-Dashboard-App.png);
+  background-size: cover;
+  background-position: top;
+  width: 50%;
+  height: 350px;
+}
+
+.project-1 {
+  background-image: url(../public/Work-Day-Scheduler-App.png);
+  background-size: cover;
+  background-position: top;
+  width: 50%;
+  height: 350px;
+}
+
+/* Project Buttons/Links */
+.app-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  color: var(--portfolio-gray);
+  padding-bottom: 0.5rem;
+}
+
+.deployed-version {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--portfolio-black);
+  font-size: 1.25rem;
+  margin: 10px 0px 0px 10px;
+  border: 3px solid var(--portfolio-white);
+  border-radius: 15px 30px;
+  padding: 5px;
+}
+
+.github-version {
+  display: flex;
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--portfolio-black);
+  font-size: 1.25rem;
+  float: right;
+  margin: 10px 10px 0px 0px;
+  border: 3px solid var(--portfolio-white);
+  border-radius: 30px 15px;
+  padding: 5px;
+}
+
+/* Contact Info */
+.info-style {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.resume {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 400px;
+  font-family: 'Francois One', sans-serif;
+}
+
+.Footer {
+  color: var(--portfolio-white);
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+  .self-image-cont {
+      flex-direction: column;
+      height: 70vh;
+  }
+  .completed {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .self-image {
+      height: 15rem;
+      width: 15rem;
+  }
+  .title-headers-1 {
+      font-size: 201%;
+  }
+  .title-headers-2 {
+      font-size: 99%;
+  }
+  .title-headers-3 {
+      font-size: 77%;
+  }
+}
+
+/* Used this Media Queries to make the Project 2 bigger when the screen drops below 768px */
+/* Used this Media Queries to make the Project 3 bigger when the screen drops below 768px */
+@media (max-width: 768px) {
+  .project-4,
+  .project-3,
+  .project-2,
+  .project-1 {
+      flex-basis: 100%;
+  }
+}
+
+/* Used this Media Queries to make the Header and Nav more responsive when the screen drops below 768px */
+@media (max-width: 768px) {
+  .header {
+      display: flex;
+      flex-flow: wrap column;
+      align-items: center;
+  }
+  html {
+      font-size: .75rem;
+  }
+  .header nav {
+      font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-style {
+      display: flex;
+      flex-flow: wrap column;
+      align-items: center;
+  }
+
+  .contact-div {
+      gap: 3rem;
+      margin-top: 20px;
+  }
 }
