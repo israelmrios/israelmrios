@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -8,17 +9,19 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <Portfolio />
-        <Contact />
-      </main>
-      <Footer />
-    </>
-  );
+    <Router>
+      <div>
+        <Header />
+          <Routes>
+            <Route path='/' element={<Hero />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/portfolio' element={<Portfolio />} />
+            <Route path='/contact' element={<Contact />} />
+          </Routes> 
+        <Footer />
+      </div>
+    </Router>
+  )
 }
 
 export default App;

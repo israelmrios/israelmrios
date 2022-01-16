@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 import icon from '../img/imr-icon.png'
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
       <nav>
             <ul>
                 <li className="code">
-                    <a href="#about">About</a>
+                    <Link to="/about">About</Link>
                 </li>
                 <li className="code">
                     <a href="#portfolio">Portfolio</a>
