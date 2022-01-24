@@ -16,14 +16,14 @@ const Contact = ({ onAdd }) => {
             951.496.2702
           </a>
         </div>
-        <div className="info-style">
+        <div className="info-style react-icons">
           <a
             href="https://www.linkedin.com/in/israel-m-rios-93a81a38/"
             target="_blank"
             rel="noreferrer"
             className="code"
           >
-            <FaLinkedinIn />
+            <FaLinkedinIn className="contact-icons" />
           </a>
           <a
             href="https://github.com/israelmrios"
@@ -45,7 +45,7 @@ const Contact = ({ onAdd }) => {
             </span>
           </a> */}
           <a
-            href="https://www.linkedin.com/in/israel-m-rios-93a81a38/"
+            href="https://stackoverflow.com/users/16478510/israel-rios"
             target="_blank"
             rel="noreferrer"
             className="code"

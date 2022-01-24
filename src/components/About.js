@@ -25,7 +25,7 @@ const About = () => {
         </p>
       </div>
       <h1 className="main-headers">Technical Skills</h1>
-      <div className="skills-grid">
+      <div className="skills-grid ">
         <div>
           <a className="skills" href="/">
             <FaJs /> JavaScript

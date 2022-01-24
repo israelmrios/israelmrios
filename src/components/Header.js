@@ -26,7 +26,8 @@ const Header = () => {
                     <Link to="/contact">Contact</Link>
                 </li>
                 <li className={selectedTab === 'resume' ? "code-dark" : "code"} onClick={() =>{setSelectedTab('resume')}} >
-                    <a href="./assets/img/Israel Rios' Resume.pdf" target="_blank" className="code">Resume</a>
+                    <Link to="/resume">Resume</Link>
+                    {/* <a href="./assets/img/Israel Rios' Resume.pdf" target="_blank" className="code">Resume</a> */}
                 </li>
             </ul>
         </nav>

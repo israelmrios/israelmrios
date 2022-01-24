@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
+import Resume from "./components/Resume";
 
 function App() {
   // ContactForm collection
@@ -23,6 +24,7 @@ function App() {
               <Route path='/about' element={<About />} />
               <Route path='/portfolio' element={<Portfolio />} />
               <Route path='/contact' element={<Contact onAdd={collectData} />} />
+              <Route path='/resume' element={<Resume />} />
             </Routes> 
           </main>
         <Footer />

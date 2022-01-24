@@ -1,62 +1,50 @@
 import React from "react";
-import { useState } from "react";
-// import PropTypes from 'prop-types'
+import useContactForm from "./useContactForm";
+import validateInfo from "../utils/validateInfo";
 
 const ContactForm = ({ onAdd }) => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const onClick = (e) => {
-      e.preventDefault()
-
-      if(!name) {
-          alert('Please include your name')
-      }if(!email) {
-          alert('Please include your email')
-      }if(!message) {
-          alert('Please include a message')
-          return
-      }
-
-      onAdd({ name, email, message })
-
-      setName('')
-      setEmail('')
-      setMessage('')
-  }
+  const { values, errors, handleChange, onClick } = useContactForm({
+    validateInfo,
+    onAdd,
+  });
 
   return (
     <form className="form">
       <div className="form-control">
         <input
           type="text"
+          name="name"
           className="form-input"
           placeholder="name"
           aria-label="name"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
+          value={values.name}
+          onChange={handleChange}
         />
+        {errors.name && <p>{errors.name}</p>}
       </div>
       <div className="form-control">
         <input
           type="email"
+          name="email"
           className="form-input"
           placeholder="email"
-          aria-label="email"          
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          aria-label="email"
+          value={values.email}
+          onChange={handleChange}
         />
+        {errors.email && <p>{errors.email}</p>}
       </div>
       <div className="form-control">
         <textarea
           type="text"
+          name="message"
           className="form-input"
           placeholder="message"
           aria-label="message"
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
+          value={values.message}
+          onChange={handleChange}
         />
+        {errors.message && <p>{errors.message}</p>}
       </div>
       <button onClick={onClick} className="btn">
         Submit
@@ -64,9 +52,5 @@ const ContactForm = ({ onAdd }) => {
     </form>
   );
 };
-
-// ContactForm.propTypes = {
-//     onClick: PropTypes.func
-// }
 
 export default ContactForm;
