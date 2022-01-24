@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/israelmrios/static/css/main.3a05f022.css",
+    "main.js": "/israelmrios/static/js/main.e6f1e978.js",
+    "static/js/787.3057103e.chunk.js": "/israelmrios/static/js/787.3057103e.chunk.js",
+    "static/media/NFT-Generator-App.gif": "/israelmrios/static/media/NFT-Generator-App.c8012929157c969a865e.gif",
+    "static/media/self-image-fed-2.png": "/israelmrios/static/media/self-image-fed-2.d77ccb2009264ed6045f.png",
+    "static/media/Movie-Finder-App.png": "/israelmrios/static/media/Movie-Finder-App.07d7c07c1e02139d3196.png",
+    "static/media/Work-Day-Scheduler-App.png": "/israelmrios/static/media/Work-Day-Scheduler-App.f0438455c007a86e2a73.png",
+    "static/media/ep_naturalblack.png": "/israelmrios/static/media/ep_naturalblack.9e272f4d01d1cdb27e56.png",
+    "static/media/Weather-Dashboard-App.png": "/israelmrios/static/media/Weather-Dashboard-App.f1cb55ba6758c7b49fce.png",
+    "static/media/Coding-Tech-Blog-App.png": "/israelmrios/static/media/Coding-Tech-Blog-App.455bd41228cfa8dd706f.png",
+    "static/media/Just-Another-Text-Editor.png": "/israelmrios/static/media/Just-Another-Text-Editor.f589f9b88ca35cd6c327.png",
+    "static/media/imr-icon.png": "/israelmrios/static/media/imr-icon.3b51a5547a6ff67d4208.png",
+    "index.html": "/israelmrios/index.html",
+    "main.3a05f022.css.map": "/israelmrios/static/css/main.3a05f022.css.map",
+    "main.e6f1e978.js.map": "/israelmrios/static/js/main.e6f1e978.js.map",
+    "787.3057103e.chunk.js.map": "/israelmrios/static/js/787.3057103e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3a05f022.css",
+    "static/js/main.e6f1e978.js"
+  ]
+}
