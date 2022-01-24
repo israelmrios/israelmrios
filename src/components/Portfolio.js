@@ -13,6 +13,14 @@ const Portfolio = () => {
                             target="_blank" rel='noreferrer'>GitHub Repository</a>
                     </div>
                 </div>
+                <div className="items project-5">
+                    <div className="app-links">
+                        <a href="https://hidden-escarpment-30090.herokuapp.com/" className="deployed-version code-box"
+                            target="_blank" rel='noreferrer'>Just Another Text Editor</a>
+                        <a href="https://github.com/israelmrios/Text-Editor.git" className="github-version code-box"
+                            target="_blank" rel='noreferrer'>GitHub Repository</a>
+                    </div>
+                </div>  
                 <div className="items project-4">
                     <div className="app-links">
                         <a href="https://agile-wildwood-77680.herokuapp.com/" className="deployed-version code-box"

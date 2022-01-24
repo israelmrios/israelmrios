@@ -1,6 +1,6 @@
 # Israel Rios' GitHub Portfolio
 
-![I am GitHub Readme Generator's creator](./assets/img/self-image-banner.png)
+![I am GitHub Readme Generator's creator](./src/img/self-image-banner.png)
 
 Software Engineer with Certificate in Full-Stack Web Development from UCR Boot Camp and a Bachelor's Degree in Information Management. Recent experience in JavaScript, CSS, Node.js, React.js, MySQL, API Interaction and responsive web design. Detail oriented and hardworking teammate, focused on completing projects on time and above expectation.  I love to keep learning, continue challenging myself, and do interesting things that matter.
 
@@ -9,25 +9,26 @@ I applied aspects of MVC paradigm, Handlebars.js and Sequelize in a recent proje
 
 ## Examples of Work
 
-[![NFT Generator Demo](./assets/img/NFT-Generator-App.gif)](https://github.com/anun05/nft-generator.git)
+[![NFT Generator Demo](./src/img/NFT-Generator-App.gif)](https://github.com/anun05/nft-generator.git)
 > **Note**: You can find the NFT Generator Application here&mdash; https://github.com/anun05/nft-generator.git
 
-[![Coding Tech Blog Application](./assets/img/Coding-Tech-Blog-App.png)](https://github.com/israelmrios/Coding-Tech-Blog.git)
+[![Coding Tech Blog Application](./src/img/Coding-Tech-Blog-App.png)](https://github.com/israelmrios/Coding-Tech-Blog.git)
 > **Note**: You can find the Coding Tech Blog Application here&mdash; https://github.com/israelmrios/Coding-Tech-Blog.git
 
-[![Movie Finder Demo](./assets/img/Movie-Finder-App.png)](https://israelmrios.github.io/Movie-Finder/)
+[![Movie Finder Demo](./src/img/Movie-Finder-App.png)](https://israelmrios.github.io/Movie-Finder/)
 > **Note**: You can find the Movie Finder Application here&mdash; https://israelmrios.github.io/Movie-Finder/
 
-[![Weather Dashboard Application](./assets/img/weather-dashboard-demo.gif)](https://israelmrios.github.io/Weather-Dashboard/)
+[![Weather Dashboard Application](./src/img/weather-dashboard-demo.gif)](https://israelmrios.github.io/Weather-Dashboard/)
 > **Note**: You can find the Weather Dashboard Application here&mdash; https://israelmrios.github.io/Weather-Dashboard/
 
-[![Work Day Scheduler Application](./assets/img/Work-Day-Scheduler-Demo.gif)](https://israelmrios.github.io/Work-Day-Scheduler/)
+[![Work Day Scheduler Application](./src/img/Work-Day-Scheduler-Demo.gif)](https://israelmrios.github.io/Work-Day-Scheduler/)
 > **Note**: You can find the Work Day Scheduler Application here&mdash; https://israelmrios.github.io/Work-Day-Scheduler/
 
 ## Skills
 
 ```
 * JavaScript
+* React
 * jQuery
 * HTML
 * CSS
@@ -49,5 +50,5 @@ I applied aspects of MVC paradigm, Handlebars.js and Sequelize in a recent proje
 * [Subtle Patterns](https://www.toptal.com/designers/subtlepatterns/)
 
 ## License
-Copyright (c) 2021 Israel M Rios.
+Copyright (c) 2022 Israel M Rios.
 Licensed under the [MIT License](LICENSE).

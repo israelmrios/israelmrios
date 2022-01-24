@@ -216,6 +216,14 @@ main {
   background-position: top;
 }
 
+.project-5 {
+  background-image: url(./img/Just-Another-Text-Editor.png);
+  background-size: cover;
+  background-position: top;
+  width: 50%;
+  height: 350px;  
+}
+
 .project-4 {
   background-image: url(./img/Coding-Tech-Blog-App.png);
   background-size: cover;
@@ -400,11 +408,15 @@ footer {
   .title-headers-3 {
       font-size: 77%;
   }
+  .title-headers-5 {
+    font-size: 77%;
+}
 }
 
 /* Used this Media Queries to make the Project 2 bigger when the screen drops below 768px */
 /* Used this Media Queries to make the Project 3 bigger when the screen drops below 768px */
 @media (max-width: 768px) {
+  .project-5,
   .project-4,
   .project-3,
   .project-2,
