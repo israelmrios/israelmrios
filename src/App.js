@@ -20,12 +20,11 @@ function App() {
         <Header />
           <main>
             <Routes>
-              <Route path='/' element={<Hero />} />
+              <Route path='/israelmrios' element={<Hero />} />
               <Route path='/about' element={<About />} />
               <Route path='/portfolio' element={<Portfolio />} />
               <Route path='/contact' element={<Contact onAdd={collectData} />} />
               <Route path='/resume' element={<Resume />} />
-              {/* <Route path='*' element={<Navigate to ='/israelmrios' replace />} /> */}
             </Routes> 
           </main>
         <Footer />
