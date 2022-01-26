@@ -20,12 +20,12 @@ function App() {
         <Header />
           <main>
             <Routes>
-              <Route exact path='/' element={<Hero />} />
-              <Route exact path='/about' element={<About />} />
-              <Route exact path='/portfolio' element={<Portfolio />} />
-              <Route exact path='/contact' element={<Contact onAdd={collectData} />} />
-              <Route exact path='/resume' element={<Resume />} />
-              <Route path='*' element={<Navigate to ='/israelmrios' replace />} />
+              <Route path='/' element={<Hero />} />
+              <Route path='/about' element={<About />} />
+              <Route path='/portfolio' element={<Portfolio />} />
+              <Route path='/contact' element={<Contact onAdd={collectData} />} />
+              <Route path='/resume' element={<Resume />} />
+              {/* <Route path='*' element={<Navigate to ='/israelmrios' replace />} /> */}
             </Routes> 
           </main>
         <Footer />
