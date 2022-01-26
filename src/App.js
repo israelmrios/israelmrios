@@ -25,7 +25,7 @@ function App() {
               <Route exact path='/portfolio' element={<Portfolio />} />
               <Route exact path='/contact' element={<Contact onAdd={collectData} />} />
               <Route exact path='/resume' element={<Resume />} />
-              <Route path='*' element={<Navigate to ='/' replace />} />
+              <Route path='*' element={<Navigate to ='/israelmrios' replace />} />
             </Routes> 
           </main>
         <Footer />
