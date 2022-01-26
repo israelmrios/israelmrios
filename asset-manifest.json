@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/israelmrios/static/css/main.3a05f022.css",
-    "main.js": "/israelmrios/static/js/main.a451eeb0.js",
+    "main.js": "/israelmrios/static/js/main.e6f1e978.js",
     "static/js/787.3057103e.chunk.js": "/israelmrios/static/js/787.3057103e.chunk.js",
     "static/media/NFT-Generator-App.gif": "/israelmrios/static/media/NFT-Generator-App.c8012929157c969a865e.gif",
     "static/media/self-image-fed-2.png": "/israelmrios/static/media/self-image-fed-2.d77ccb2009264ed6045f.png",
@@ -14,11 +14,11 @@
     "static/media/imr-icon.png": "/israelmrios/static/media/imr-icon.3b51a5547a6ff67d4208.png",
     "index.html": "/israelmrios/index.html",
     "main.3a05f022.css.map": "/israelmrios/static/css/main.3a05f022.css.map",
-    "main.a451eeb0.js.map": "/israelmrios/static/js/main.a451eeb0.js.map",
+    "main.e6f1e978.js.map": "/israelmrios/static/js/main.e6f1e978.js.map",
     "787.3057103e.chunk.js.map": "/israelmrios/static/js/787.3057103e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3a05f022.css",
-    "static/js/main.a451eeb0.js"
+    "static/js/main.e6f1e978.js"
   ]
 }
