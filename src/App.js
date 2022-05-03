@@ -21,10 +21,10 @@ function App() {
           <main>
             <Routes>
               <Route path='/' element={<Hero />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/portfolio' element={<Portfolio />} />
-              <Route path='/contact' element={<Contact onAdd={collectData} />} />
-              <Route path='/resume' element={<Resume />} />
+              <Route path='about' element={<About />} />
+              <Route path='portfolio' element={<Portfolio />} />
+              <Route path='contact' element={<Contact onAdd={collectData} />} />
+              <Route path='resume' element={<Resume />} />
             </Routes> 
           </main>
         <Footer />

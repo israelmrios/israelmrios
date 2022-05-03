@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Outlet, Link } from 'react-router-dom'
 import icon from '../img/imr-icon.png'
 
 const Header = () => {
@@ -31,6 +31,7 @@ const Header = () => {
                 </li>
             </ul>
         </nav>
+        <Outlet />
     </header>
   );
 };
