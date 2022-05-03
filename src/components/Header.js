@@ -9,7 +9,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link to="/israelmrios" className="code" onClick={() =>{setSelectedTab('')}} >
+      <Link to="/" className="code" onClick={() =>{setSelectedTab('')}} >
       <h1><img src={icon} alt="Icon with Initials" className="icon" /> 
         ISRAEL RIOS
       </h1>
